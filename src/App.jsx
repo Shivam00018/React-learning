@@ -1,6 +1,8 @@
 import './App.css';
 
 import ProductTab from './ProductTab';
+import Button from './Button';
+import Form from './Form';
 
 
 
@@ -8,7 +10,8 @@ import ProductTab from './ProductTab';
 function App() {
   return (
     <div>
-      <ProductTab/>
+     
+     <Form/>
       
     </div>
   )
