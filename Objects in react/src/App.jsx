@@ -1,12 +1,12 @@
 import Ludoboard from './Ludoboard'
 import './App.css'
-
+import Todolist from './Todolist'
 function App() {
   
 
   return (
     <>
-     <Ludoboard/>
+     <Todolist/>
     </>
   )
 }
