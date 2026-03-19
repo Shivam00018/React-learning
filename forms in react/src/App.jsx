@@ -1,12 +1,14 @@
-import Forms from './Forms'
+//import Forms from './Forms'
 import './App.css'
+import Commentsform from './Commentsform'
 
 function App() {
   
 
   return (
     <>
-    <Forms/>
+    
+    <Commentsform/>
     </>
   )
 }
