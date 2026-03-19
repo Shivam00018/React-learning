@@ -1,29 +1,40 @@
 import { useState } from "react"
 
 export default function Forms() {
-   let [Fullname, setFullname] = useState("Shivam");
-   let [Username, setUsername] = useState("Shivam");
+  let [formdata, setformdata] = useState({
+    Fullname:"",
+    Username: ""
+})
 
-   let Handlenamechange  = (event) => {
-    return(
-        setFullname(event.target.value)
-    )
-   }
+let handleinputchange = (event) => {
+   let fieldName= event.target.name;
+   let newvalue= event.target.value;
 
-   let Handleuserchange  = (event) => {
-    return(
-        setusername(event.target.value)
-    )
+   setformdata((currdata)  => {
+    currdata[fieldName] = newvalue;
+    return{...currdata};
    }
+)
+};
+
+ let handlesubmit = (event) => {
+    event.preventDefault();
+    setformdata({
+        Fullname :"",
+        Username :"",
+    })
+ }
+
+  
     return(
-        <form >
+        <form onSubmit={handlesubmit} >
             <label htmlFor="Username"> Full Name </label>
-            <input placeholder="Enter your name" type="text" value={Fullname} onChange={Handlenamechange} id="Username" />
+            <input placeholder="Enter your name" type="text" value={formdata.Fullname} onChange={handleinputchange} id="Username" name="Fullname" />
             <button>submit</button>
             <br />
             <br />
             <label htmlFor="Username"> User Name </label>
-            <input placeholder="Enter your name" type="text" value={Username} onChange={Handleuserchange} id="Username" />
+            <input placeholder="Enter your name" type="text" value={formdata.Username} onChange={handleinputchange} id="Username" name="Username" />
             <button>submit</button>
             
         </form>    )
