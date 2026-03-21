@@ -1,16 +1,115 @@
-# React + Vite
+# 🔐 Login & Signup UI (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean Login & Signup user interface built using **React.js** and **CSS**.
+This project focuses on building a structured form layout with proper styling and component-based architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* Clean and responsive UI
+* Reusable input components
+* Icon-based input fields (Name, Email, Password)
+* Login & Signup buttons
+* "Forgot Password" section
+* Centered card layout with gradient background
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* CSS3
+* JavaScript (ES6)
+
+---
+
+## 📁 Project Structure
+
+```
+login-signup/
+│
+├── public/
+├── src/
+│   ├── Assets/
+│   │   ├── person.png
+│   │   ├── email.png
+│   │   └── password.png
+│   │
+│   ├── Components/
+│   │   ├── LoginSignup.jsx
+│   │   └── LoginSignup.css
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+└── package.json
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/login-signup.git
+```
+
+2. Navigate into the project:
+
+```bash
+cd login-signup
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📸 Preview
+
+A simple authentication UI with:
+
+* Input fields for name, email, password
+* Gradient background
+* Card-based design
+
+---
+
+## 📌 Future Improvements
+
+* Form validation (React state + error handling)
+* Toggle between Login / Signup
+* Backend integration (authentication)
+* Responsive design for mobile devices
+
+---
+
+## ❗ Note
+
+This is a frontend-only project focused on UI design.
+No authentication or backend functionality is implemented.
+
+---
+
+## 👨‍💻 Author
+
+Shivam
+
+---
+
+## ⭐ Support
+
+If you found this useful, consider giving it a ⭐ on GitHub!
+
