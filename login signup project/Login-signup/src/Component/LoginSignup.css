@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background center */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Main card */
+.container {
+  width: 350px;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background: #2a5298;
+  margin: 8px auto;
+  border-radius: 2px;
+}
+
+/* Inputs section */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Input row */
+.input {
+  display: flex;
+  align-items: center;
+  background: #f1f3f6;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Icon */
+.input img {
+  width: 18px;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+/* Input field */
+.input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Forgot password */
+.forgot-password {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.forgot-password span {
+  color: #2a5298;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Buttons container */
+.submit-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+/* Buttons */
+.signup,
+.login {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Signup */
+.signup {
+  background: #e0e0e0;
+}
+
+/* Login */
+.login {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: white;
+}
